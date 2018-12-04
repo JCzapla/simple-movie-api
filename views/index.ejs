@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie API</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple movie API</h1>
+        <p>Description of my endpoints below. I recommend using Postman to check them.</p>
+        <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">POST /movies</h5>
+            </div>
+            <p class="mb-1">Saves a movie with given title to database. In request body there shoud be key named 'title' with a movie title. </p>
+        </div>
+        <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">GET /movies</h5>
+            </div>
+            <p class="mb-1">Returns all movies from a database.</p>
+        </div>
+        <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">POST /comment</h5>
+            </div>
+            <p class="mb-1">Saves a comment for a given movie to a database. In body request provide key named 'id' with movie id which you want to comment on, and key named 'comment' with acutal text of your comment.</p>
+        </div>
+        <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">GET /comment</h5>
+            </div>
+            <p class="mb-1">Returns all comment form a database.</p>
+        </div>
+        <div class="list-group-item">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">GET /comment/:id</h5>
+            </div>
+            <p class="mb-1">Returns comments for a given movie. Provide movie ID (database one) in an URL</p>
+        </div>
+    </div>
+</body>
+</html>
