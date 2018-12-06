@@ -4,11 +4,11 @@ Saves a movie with given title to database. In request body there shoud be key n
 GET /movies
 Returns all movies from a database.
 
-POST /comment
+POST /comments
 Saves a comment for a given movie to a database. In body request provide key named 'id' with movie id which you want to comment on, and key named 'comment' with acutal text of your comment.
 
-GET /comment
+GET /comments
 Returns all comment form a database.
 
-GET /comment/:id
+GET /comments/:id
 Returns comments for a given movie. Provide movie ID (database one) in an URL
